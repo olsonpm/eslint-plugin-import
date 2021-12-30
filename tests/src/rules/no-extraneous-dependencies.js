@@ -26,6 +26,7 @@ const packageDirWithEmpty = path.join(__dirname, '../../files/empty');
 const packageDirBundleDeps = path.join(__dirname, '../../files/bundled-dependencies/as-array-bundle-deps');
 const packageDirBundledDepsAsObject = path.join(__dirname, '../../files/bundled-dependencies/as-object');
 const packageDirBundledDepsRaceCondition = path.join(__dirname, '../../files/bundled-dependencies/race-condition');
+const packageDirNpmWorkspaces = path.join(__dirname, '../../files/npm-workspaces');
 
 const {
   dependencies: deps,
@@ -163,6 +164,14 @@ ruleTester.run('no-extraneous-dependencies', rule, {
         import 'expose-loader?exposes[]=$&exposes[]=jQuery!jquery';
       `,
       settings: { 'import/resolver': 'webpack' },
+    }),
+
+    test({
+      code: `
+      import "top-level-package";
+      import "nested-package";
+      `,
+      options: [{ packageDir: packageDirNpmWorkspaces, workspaces: true }],
     }),
   ],
   invalid: [
@@ -373,6 +382,13 @@ ruleTester.run('no-extraneous-dependencies', rule, {
       code: 'import "esm-package-not-in-pkg-json/esm-module";',
       errors: [{
         message: `'esm-package-not-in-pkg-json' should be listed in the project's dependencies. Run 'npm i -S esm-package-not-in-pkg-json' to add it`,
+      }],
+    }),
+    test({
+      code: 'import "top-level-package";',
+      options: [{ packageDir: packageDirNpmWorkspaces }],
+      errors: [{
+        message: "'top-level-package' should be listed in the project's dependencies. Run 'npm i -S top-level-package' to add it",
       }],
     }),
   ],
