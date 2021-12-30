@@ -6,6 +6,9 @@ This change log adheres to standards from [Keep a CHANGELOG](https://keepachange
 
 ## [Unreleased]
 
+### Changed
+- [`no-extraneous-dependencies`]: add npm workspaces support ([#2342], thank [@acdibble])
+
 ## [2.25.3] - 2021-11-09
 
 ### Fixed
