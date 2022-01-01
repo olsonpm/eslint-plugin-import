@@ -6,6 +6,8 @@ This change log adheres to standards from [Keep a CHANGELOG](https://keepachange
 
 ## [Unreleased]
 
+## [2.25.3-1]
+
 ### Changed
 - [`no-extraneous-dependencies`]: add npm workspaces support ([#2342], thank [@acdibble])
 
@@ -1331,7 +1333,8 @@ for info on changes for earlier releases.
 [#119]: https://github.com/import-js/eslint-plugin-import/issues/119
 [#89]: https://github.com/import-js/eslint-plugin-import/issues/89
 
-[Unreleased]: https://github.com/import-js/eslint-plugin-import/compare/v2.25.3...HEAD
+[Unreleased]: https://github.com/import-js/eslint-plugin-import/compare/v2.25.3-1...HEAD
+[2.25.3]: https://github.com/import-js/eslint-plugin-import/compare/v2.25.3...v2.25.3-1
 [2.25.3]: https://github.com/import-js/eslint-plugin-import/compare/v2.25.2...v2.25.3
 [2.25.2]: https://github.com/import-js/eslint-plugin-import/compare/v2.25.1...v2.25.2
 [2.25.1]: https://github.com/import-js/eslint-plugin-import/compare/v2.25.0...v2.25.1
