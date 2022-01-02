@@ -3,6 +3,6 @@
  */
 module.exports = {
   settings: {
-    'import/core-modules': ['electron'],
+    '@olsonpm/eslint-plugin-import/core-modules': ['electron'],
   },
 };

@@ -8,7 +8,7 @@
 module.exports = {
 
   settings: {
-    'import/extensions': ['.js', '.jsx'],
+    '@olsonpm/eslint-plugin-import/extensions': ['.js', '.jsx'],
   },
 
   parserOptions: {

@@ -4,11 +4,12 @@
  * @type {Object}
  */
 module.exports = {
-  plugins: ['import'],
-  rules: { 'import/no-unresolved': 2,
-    'import/named': 2,
-    'import/namespace': 2,
-    'import/default': 2,
-    'import/export': 2,
+  plugins: ['@olsonpm/eslint-plugin-import'],
+  rules: {
+    '@olsonpm/import/no-unresolved': 2,
+    '@olsonpm/import/named': 2,
+    '@olsonpm/import/namespace': 2,
+    '@olsonpm/import/default': 2,
+    '@olsonpm/import/export': 2,
   },
 };

@@ -5,8 +5,8 @@
  * @type {Object}
  */
 module.exports = {
-  plugins: ['import'],
+  plugins: ['@olsonpm/eslint-plugin-import'],
   rules: {
-    'import/no-deprecated': 1,
+    '@olsonpm/import/no-deprecated': 1,
   },
 };

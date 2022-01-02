@@ -10,12 +10,12 @@ const allExtensions = ['.ts', '.tsx', '.js', '.jsx'];
 module.exports = {
 
   settings: {
-    'import/extensions': allExtensions,
-    'import/external-module-folders': ['node_modules', 'node_modules/@types'],
-    'import/parsers': {
+    '@olsonpm/eslint-plugin-import/extensions': allExtensions,
+    '@olsonpm/eslint-plugin-import/external-module-folders': ['node_modules', 'node_modules/@types'],
+    '@olsonpm/eslint-plugin-import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
-    'import/resolver': {
+    '@olsonpm/eslint-plugin-import/resolver': {
       'node': {
         'extensions': allExtensions,
       },
@@ -25,7 +25,7 @@ module.exports = {
   rules: {
     // analysis/correctness
 
-    // TypeScript compilation already ensures that named imports exist in the referenced module
-    'import/named': 'off',
+    // TypeScript compilation already ensures that named @olsonpm/eslint-plugin-imports exist in the referenced module
+    '@olsonpm/eslint-plugin-import/named': 'off',
   },
 };
