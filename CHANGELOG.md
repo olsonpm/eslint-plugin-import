@@ -6,6 +6,9 @@ This change log adheres to standards from [Keep a CHANGELOG](https://keepachange
 
 ## [Unreleased]
 
+## [2.25.3-2]
+- [Configs]: update configs to use scoped definitions
+
 ## [2.25.3-1]
 
 ### Changed
@@ -1333,7 +1336,8 @@ for info on changes for earlier releases.
 [#119]: https://github.com/import-js/eslint-plugin-import/issues/119
 [#89]: https://github.com/import-js/eslint-plugin-import/issues/89
 
-[Unreleased]: https://github.com/import-js/eslint-plugin-import/compare/v2.25.3-1...HEAD
+[Unreleased]: https://github.com/import-js/eslint-plugin-import/compare/v2.25.3-2...HEAD
+[Unreleased]: https://github.com/import-js/eslint-plugin-import/compare/v2.25.3-1...v2.25.3-2
 [2.25.3]: https://github.com/import-js/eslint-plugin-import/compare/v2.25.3...v2.25.3-1
 [2.25.3]: https://github.com/import-js/eslint-plugin-import/compare/v2.25.2...v2.25.3
 [2.25.2]: https://github.com/import-js/eslint-plugin-import/compare/v2.25.1...v2.25.2
